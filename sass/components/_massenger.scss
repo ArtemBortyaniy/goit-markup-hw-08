@@ -1,0 +1,48 @@
+.massenger {
+    display: flex;
+    justify-content: center;
+
+    &__item + &__item{
+        margin-left: 10px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        &--white {
+            color: $icon-color;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+            &:hover,
+            &:focus {
+                background-color: $accentColor;
+                color: $white-text-color;
+            } 
+        }
+
+        &--blue {
+            background-color: $background-color-icon;
+            color: $white-text-color;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                
+            &:hover,
+            &:focus {
+                background-color: $accentColor;
+            } 
+        }
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+.massenger--margin-top {
+    margin-top: 20px;
+}

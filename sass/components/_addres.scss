@@ -1,0 +1,31 @@
+.footer {
+    background-color: $background-color-footer;
+}
+
+.address {
+    margin-top: 20px;
+    
+    &__item {
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-style: normal;
+
+            &--white{
+                color: $white-text-color;
+            }
+            &--grey{
+                color: $addres-text-color;
+            }
+            &:hover,
+            &:focus {
+                color: $accentColor;
+            }
+    }
+}
+

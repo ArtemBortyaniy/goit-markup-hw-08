@@ -1,0 +1,73 @@
+.features-list {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        &__item + &__item {
+            margin-top: 30px;
+        }
+    }
+
+    &__box {
+        background-color: $background-color;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+
+    &__svg {
+        display: block;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $blackColor;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+
+}
