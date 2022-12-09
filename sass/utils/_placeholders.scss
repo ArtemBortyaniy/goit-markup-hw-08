@@ -59,6 +59,15 @@ p {
 .section{
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.section-work {
+    padding-bottom: 94px;
 }
 
 .teams__title {
@@ -73,6 +82,7 @@ p {
     @media screen and (min-width:1200px){
         font-size: 36px;
         line-height: 42px;
+        margin-bottom: 50px;
     }
 }
 

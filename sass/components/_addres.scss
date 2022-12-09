@@ -5,8 +5,8 @@
 .address {
     margin-top: 20px;
     
-    &__item {
-        margin-bottom: 8px;
+    &__item + &__item{
+        margin-top: 8px;
     }
 
     &__link {
