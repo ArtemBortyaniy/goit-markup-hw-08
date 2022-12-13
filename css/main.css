@@ -530,7 +530,7 @@ p {
 }
 .navigation-list__link--current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: 0px;
   right: 0px;
   content: " ";
   width: 100%;
@@ -582,6 +582,18 @@ p {
 .contacts-list__svg {
   fill: currentColor;
   margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__svg--width {
+    height: 12px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__svg--height {
+    height: 16px;
+    width: 10px;
+  }
 }
 
 .hero {
@@ -1042,12 +1054,16 @@ p {
   background-color: #2F303A;
   margin-right: 12px;
   margin-top: 20px;
-  margin-bottom: 20px;
   color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
   .join__email {
     width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .join__email {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
